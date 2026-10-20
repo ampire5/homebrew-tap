@@ -1,6 +1,6 @@
 cask "loupe" do
   version "0.1.0"
-  sha256 :no_check # set by the Loupe release workflow
+  sha256 "5a4fbea982bd3675c4f4570437705aa6b012256858811432db13709ae6dddd0b"
 
   url "https://github.com/ampire5/Loupe/releases/download/v#{version}/Loupe-v#{version}-macOS-arm64.zip"
   name "Loupe"
