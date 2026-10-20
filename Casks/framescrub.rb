@@ -1,6 +1,6 @@
 cask "framescrub" do
   version "0.1.0"
-  sha256 :no_check # set by the FrameScrub release workflow
+  sha256 "92e8c4c8c8258781003e307cc57699b47539701843d8e95c82828793fec14a2b"
 
   url "https://github.com/ampire5/FrameScrub/releases/download/v#{version}/FrameScrub-v#{version}-macOS-arm64.zip"
   name "FrameScrub"
