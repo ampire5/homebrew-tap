@@ -21,6 +21,8 @@ cask "loupe" do
     "~/.config/loupe",
     "~/Library/Application Support/Loupe",
     "~/Library/Caches/Loupe",
+    "~/Library/Caches/local.loupe",
+    "~/Library/Preferences/local.loupe.plist",
   ]
 
   caveats <<~EOS

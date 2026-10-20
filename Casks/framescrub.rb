@@ -21,6 +21,7 @@ cask "framescrub" do
   zap trash: [
     "~/.config/framescrub",
     "~/Library/Application Support/FrameScrub",
+    "~/Library/Preferences/local.framescrub.plist",
   ]
 
   caveats <<~EOS
