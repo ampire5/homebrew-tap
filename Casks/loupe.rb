@@ -1,13 +1,23 @@
 cask "loupe" do
-  version "0.1.0"
-  sha256 "5a4fbea982bd3675c4f4570437705aa6b012256858811432db13709ae6dddd0b"
+  # Apple Silicon: main's releases. Intel: the lts/macos26 line (macOS 26).
+  # The release workflows rewrite the lines marked `# arm` and `# intel`.
+  on_arm do
+    version "0.1.0" # arm
+    sha256 "5a4fbea982bd3675c4f4570437705aa6b012256858811432db13709ae6dddd0b" # arm
 
-  url "https://github.com/ampire5/Loupe/releases/download/v#{version}/Loupe-v#{version}-macOS-arm64.zip"
+    url "https://github.com/ampire5/Loupe/releases/download/v#{version}/Loupe-v#{version}-macOS-arm64.zip"
+  end
+  on_intel do
+    version "0.1.0-lts" # intel
+    sha256 :no_check # intel
+
+    url "https://github.com/ampire5/Loupe/releases/download/v#{version}/Loupe-v#{version}-macOS-x86_64.zip"
+  end
+
   name "Loupe"
   desc "Metal image viewer for huge photos, with Stash integration"
   homepage "https://github.com/ampire5/Loupe"
 
-  depends_on arch: :arm64
   depends_on macos: ">= :tahoe"
 
   app "Loupe.app"

@@ -1,15 +1,27 @@
 cask "framescrub" do
-  version "0.1.0"
-  sha256 "92e8c4c8c8258781003e307cc57699b47539701843d8e95c82828793fec14a2b"
+  # Apple Silicon: main's releases. Intel: the lts/macos26 line (macOS 26; FFmpeg built in for FrameScrub).
+  # The release workflows rewrite the lines marked `# arm` and `# intel`.
+  on_arm do
+    version "0.1.0" # arm
+    sha256 "92e8c4c8c8258781003e307cc57699b47539701843d8e95c82828793fec14a2b" # arm
 
-  url "https://github.com/ampire5/FrameScrub/releases/download/v#{version}/FrameScrub-v#{version}-macOS-arm64.zip"
+    url "https://github.com/ampire5/FrameScrub/releases/download/v#{version}/FrameScrub-v#{version}-macOS-arm64.zip"
+
+    # The Intel build has FFmpeg built in.
+    depends_on formula: "ffmpeg"
+  end
+  on_intel do
+    version "0.1.0-lts" # intel
+    sha256 :no_check # intel
+
+    url "https://github.com/ampire5/FrameScrub/releases/download/v#{version}/FrameScrub-v#{version}-macOS-x86_64.zip"
+  end
+
   name "FrameScrub"
   desc "Frame-accurate video player with instant backward scrubbing and Stash integration"
   homepage "https://github.com/ampire5/FrameScrub"
 
-  depends_on arch: :arm64
   depends_on macos: ">= :tahoe"
-  depends_on formula: "ffmpeg"
 
   app "FrameScrub.app"
 
