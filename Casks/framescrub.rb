@@ -21,6 +21,7 @@ cask "framescrub" do
   desc "Frame-accurate video player with instant backward scrubbing and Stash integration"
   homepage "https://github.com/ampire5/FrameScrub"
 
+  conflicts_with cask: "framescrub@edge"
   depends_on macos: ">= :tahoe"
 
   app "FrameScrub.app"

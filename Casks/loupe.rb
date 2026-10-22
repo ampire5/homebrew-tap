@@ -18,6 +18,7 @@ cask "loupe" do
   desc "Metal image viewer for huge photos, with Stash integration"
   homepage "https://github.com/ampire5/Loupe"
 
+  conflicts_with cask: "loupe@edge"
   depends_on macos: ">= :tahoe"
 
   app "Loupe.app"
