@@ -8,8 +8,8 @@ cask "loupe@edge" do
     url "https://github.com/ampire5/Loupe/releases/download/edge/Loupe-#{version}-macOS-arm64.zip"
   end
   on_intel do
-    version "0.1.0-lts-10-gca04447" # intel
-    sha256 "8f3ab62ade05a736a8e9a27fbe3a554ba9536ad608e9833d75d1321fcc88848c" # intel
+    version "0.1.0-lts-11-gde4627a" # intel
+    sha256 "ab02ad674b51dfb3036ef7acab8c5dd14a11d2cea164ef5d568ad5ffe3811858" # intel
 
     url "https://github.com/ampire5/Loupe/releases/download/edge-lts/Loupe-#{version}-macOS-x86_64.zip"
   end
