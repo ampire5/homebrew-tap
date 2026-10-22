@@ -19,13 +19,13 @@ cask "loupe@edge" do
   homepage "https://github.com/ampire5/Loupe"
 
   conflicts_with cask: "loupe"
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "Loupe.app"
 
   # The app is not signed with a Developer ID yet; without this macOS refuses to open it.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Loupe.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Loupe.app"]
   end
 
   zap trash: [

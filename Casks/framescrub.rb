@@ -22,13 +22,13 @@ cask "framescrub" do
   homepage "https://github.com/ampire5/FrameScrub"
 
   conflicts_with cask: "framescrub@edge"
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "FrameScrub.app"
 
   # The app is not signed with a Developer ID yet; without this macOS refuses to open it.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/FrameScrub.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/FrameScrub.app"]
   end
 
   zap trash: [
