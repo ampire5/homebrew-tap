@@ -8,13 +8,12 @@ brew install --cask ampire5/tap/framescrub   # frame-accurate video player
 - [Loupe](https://github.com/ampire5/Loupe) — opens a 300-megapixel photo, fully sharp, in under a second; Stash integration.
 - [FrameScrub](https://github.com/ampire5/FrameScrub) — scrubs 4K forward and backward without waiting; Stash integration.
 
-Apple Silicon with macOS 26+, and Intel Macs with macOS 26 (the apps' `lts/macos26` line). The apps are not yet signed with an Apple Developer ID; the casks clear the quarantine flag so
+Apple Silicon with macOS 26+, and Intel Macs with macOS 26 (an x86_64 build of each release). The apps are not yet signed with an Apple Developer ID; the casks clear the quarantine flag so
 macOS opens them.
 
 ## Edge builds
 
-The latest builds that passed CI, not releases: unsigned, for testing. Apple Silicon gets main's builds, Intel the
-`lts/macos26` line's. An edge cask replaces the release cask and back; settings and data stay.
+The latest builds that passed CI, not releases: unsigned, for testing. Both architectures are main's builds. An edge cask replaces the release cask and back; settings and data stay.
 
 ```sh
 brew uninstall --cask loupe                      # if the release is installed: the two casks conflict
