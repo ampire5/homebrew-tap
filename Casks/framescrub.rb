@@ -1,5 +1,5 @@
 cask "framescrub" do
-  # Apple Silicon: main's releases. Intel: the lts/macos26 line (macOS 26; FFmpeg built in for FrameScrub).
+  # Both from main's releases: arm64 on Apple Silicon, x86_64 on Intel (macOS 26). FFmpeg is built in.
   # The release workflows rewrite the lines marked `# arm` and `# intel`.
   on_arm do
     version "0.1.0" # arm
