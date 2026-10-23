@@ -2,8 +2,8 @@ cask "framescrub@edge" do
   # The latest builds that passed CI, not releases: main's on Apple Silicon (pre-release `edge`), lts/macos26's on
   # Intel (`edge-lts`). FrameScrub's edge workflow rewrites the lines marked `# arm` and `# intel` after every build.
   on_arm do
-    version "0.1.0-26-gaabc1c8" # arm
-    sha256 "0b740366ef03819ddcab44c9cda1a8d8825c26eb050e8a2ca3d653071388e70c" # arm
+    version "0.1.0-31-gdc58f5e" # arm
+    sha256 "1dc6d202c2b6645b32ef7cf1a52aff54b8e7f2f1cfd99f1f5bd43118da8fb56d" # arm
 
     url "https://github.com/ampire5/FrameScrub/releases/download/edge/FrameScrub-#{version}-macOS-arm64.zip"
   end
