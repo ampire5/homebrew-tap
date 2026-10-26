@@ -3,10 +3,12 @@
 ```sh
 brew install --cask ampire5/tap/loupe        # Metal image viewer for huge photos
 brew install --cask ampire5/tap/framescrub   # frame-accurate video player
+brew install ampire5/tap/capsswitch          # Caps Lock switches keyboard layouts instantly
 ```
 
 - [Loupe](https://github.com/ampire5/Loupe) — opens a 300-megapixel photo, fully sharp, in under a second; Stash integration.
 - [FrameScrub](https://github.com/ampire5/FrameScrub) — scrubs 4K forward and backward without waiting; Stash integration.
+- [capsswitch](https://github.com/ampire5/capsswitch) — Caps Lock switches between the two most recent keyboard layouts, instantly; start it with `brew services start capsswitch`.
 
 Apple Silicon with macOS 26+, and Intel Macs with macOS 26 (an x86_64 build of each release). The apps are not yet signed with an Apple Developer ID; the casks clear the quarantine flag so
 macOS opens them.
