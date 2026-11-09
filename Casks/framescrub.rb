@@ -8,8 +8,8 @@ cask "framescrub" do
     url "https://github.com/ampire5/FrameScrub/releases/download/v#{version}/FrameScrub-v#{version}-macOS-arm64.zip"
   end
   on_intel do
-    version "0.4.1" # intel
-    sha256 "a8d35e9a0c24ff2c6bfdc5c5ea6498ec869f4b37bc766a9901f493e962d13419" # intel
+    version "0.4.2" # intel
+    sha256 "cb00c34f72b8cef0ec173556af6bfa3e7045eb2f76e8cc026c079f27a3b543f1" # intel
 
     url "https://github.com/ampire5/FrameScrub/releases/download/v#{version}/FrameScrub-v#{version}-macOS-x86_64.zip"
   end
