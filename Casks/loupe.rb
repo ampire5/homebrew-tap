@@ -2,8 +2,8 @@ cask "loupe" do
   # Both from main's releases: arm64 on Apple Silicon, x86_64 on Intel (macOS 26).
   # The release workflows rewrite the lines marked `# arm` and `# intel`.
   on_arm do
-    version "0.3.0" # arm
-    sha256 "1666df28b9c94a1a145a194b519edc734d48b6ac7316d1133b7af1ab5bae7b06" # arm
+    version "0.4.1" # arm
+    sha256 "150918c44d9e9a9b4340cbe4841d5a5d1a6aea2d0a16b969281e473c0a2babbf" # arm
 
     url "https://github.com/ampire5/Loupe/releases/download/v#{version}/Loupe-v#{version}-macOS-arm64.zip"
   end
