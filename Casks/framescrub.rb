@@ -2,8 +2,8 @@ cask "framescrub" do
   # Both from main's releases: arm64 on Apple Silicon, x86_64 on Intel (macOS 26). FFmpeg is built in.
   # The release workflows rewrite the lines marked `# arm` and `# intel`.
   on_arm do
-    version "0.5.0" # arm
-    sha256 "9bb8cf3d2802b6490a8b0396bf7824b5b389ff453cde4898e5046eabc9253f3a" # arm
+    version "0.6.0" # arm
+    sha256 "a29d5ddde7c025c543c85486b6520bcf729dd1ce89c8db62f76145af2bac8390" # arm
 
     url "https://github.com/ampire5/FrameScrub/releases/download/v#{version}/FrameScrub-v#{version}-macOS-arm64.zip"
   end
