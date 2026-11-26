@@ -1,6 +1,6 @@
 cask "mouseservice" do
-  version "0.4.0"
-  sha256 "71f4a91e9990ca13271620139f63423e85a590b4689fe4e64253dac69a64c42f"
+  version "0.5.0"
+  sha256 "97158912bf421820705cc9fafbc62dfdd2a79c50efec464b2f0773cd7033791d"
 
   url "https://github.com/ampire5/MouseService/releases/download/v#{version}/MouseService-v#{version}-macOS-universal.zip"
   name "MouseService"
