@@ -2,14 +2,14 @@ cask "loupe@edge" do
   # The latest builds that passed CI, not releases: main's, in the pre-release `edge`: arm64 on Apple Silicon, x86_64 on
   # Intel (macOS 26). Loupe's edge workflow rewrites the lines marked `# arm` and `# intel` after every build.
   on_arm do
-    version "0.5.0-1-g011a2a2" # arm
-    sha256 "8bcbd62c507a2443ee5362f50d2f7a27b756b3804e5f90f160327b25aa906a2e" # arm
+    version "0.6.0-0-g47994dc" # arm
+    sha256 "5624fa6d1ea644779976ce56936b3528428ca3b0610ad31a1b2437b5a74efb30" # arm
 
     url "https://github.com/ampire5/Loupe/releases/download/edge/Loupe-#{version}-macOS-arm64.zip"
   end
   on_intel do
-    version "0.5.0-1-g011a2a2" # intel
-    sha256 "346f27803d1c4bfa65af96a64acf820948dde6da97ac467b98bf14c6cdcfe35b" # intel
+    version "0.6.0-0-g47994dc" # intel
+    sha256 "3ccff308a55096d52d8760e57810f60af2c3bb0e4e61fdbcef7c291fa9a56eb9" # intel
 
     url "https://github.com/ampire5/Loupe/releases/download/edge/Loupe-#{version}-macOS-x86_64.zip"
   end
